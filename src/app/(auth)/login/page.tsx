@@ -14,6 +14,8 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "@/components/atoms/input";
+import ButtonLoginGithub from "@/components/molecules/button-login-github";
+import ButtonLoginGoogle from "@/components/molecules/button-login-google";
 
 const formSchema = z.object({
   email: z.string().min(1, { message: "Email must to be filled" }),
@@ -42,8 +44,8 @@ export default function LoginPage() {
         </p>
       </div>
       <div className="grid sm:grid-cols-2 gap-2">
-        {/* <ButtonLoginGithub /> */}
-        {/* <ButtonLoginGoogle /> */}
+        <ButtonLoginGithub />
+        <ButtonLoginGoogle />
       </div>
       {/* <HrText text="Or continue with" /> */}
       <Form {...form}>
