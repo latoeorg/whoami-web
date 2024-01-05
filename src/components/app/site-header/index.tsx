@@ -5,6 +5,7 @@ import { buttonVariants } from "@/components/atoms/button";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/constant";
 import { SiteHeaderModeToggle } from "./mode-toggle";
+import { Icons } from "@/components/atoms/icons";
 
 const SiteHeader = () => {
   return (
@@ -13,7 +14,9 @@ const SiteHeader = () => {
         <SiteHeaderMainNav />
         <SiteHeaderMobileNav />
 
-        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+        <div className="flex-1"></div>
+
+        <div className="flex items-center justify-between space-x-2 md:justify-end">
           <nav className="flex items-center">
             <Link
               href={siteConfig.links.github}
@@ -28,7 +31,7 @@ const SiteHeader = () => {
                   "w-9 px-0"
                 )}
               >
-                {/* <Icons.gitHub className="h-4 w-4" /> */}
+                <Icons.gitHub className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
               </div>
             </Link>
@@ -45,7 +48,7 @@ const SiteHeader = () => {
                   "w-9 px-0"
                 )}
               >
-                {/* <Icons.twitter className="h-3 w-3 fill-current" /> */}
+                <Icons.twitter className="h-4 w-4 fill-current" />
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>

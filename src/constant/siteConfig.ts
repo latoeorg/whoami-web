@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Whoami",
+  name: "whoami.",
   links: {
     github: "",
     twitter: "",
