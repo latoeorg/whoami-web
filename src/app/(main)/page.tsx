@@ -33,7 +33,7 @@ export default function Home() {
         </p>
 
         <div className="mt-10">
-          <Link href={"/"}>
+          <Link href={"/projects"}>
             <p className="group text-lg">
               <span className="me-2">{">"}</span>
               <span className="group-hover:underline">Get Started!</span>
