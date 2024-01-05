@@ -19,6 +19,10 @@ export const navigation = {
   ],
   mobile: [
     {
+      title: "Home",
+      href: "/",
+    },
+    {
       title: "Projects",
       href: "/projects",
     },
