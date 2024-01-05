@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
-import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme/theme-providers";
-import { SiteHeader } from "@/components/app";
+import { SiteFooter, SiteHeader } from "@/components/app";
 
-const inter = JetBrains_Mono({
+import "./globals.css";
+
+const jetBrains = JetBrains_Mono({
   subsets: ["latin", "latin-ext"],
 });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("min-h-screen antialiased", inter.className)}>
+      <body className={cn("min-h-screen antialiased", jetBrains.className)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -30,7 +31,8 @@ export default function RootLayout({
         >
           <div className="relative flex min-h-screen flex-col">
             <SiteHeader />
-            {children}
+            <div className="flex-1">{children}</div>
+            <SiteFooter />
           </div>
         </ThemeProvider>
       </body>
