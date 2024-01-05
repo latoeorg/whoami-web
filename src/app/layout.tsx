@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme/theme-providers";
-import { SiteFooter, SiteHeader } from "@/components/app";
+import { Toaster } from "sonner";
 
 import "./globals.css";
 
@@ -57,6 +57,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+
+          <Toaster richColors />
         </ThemeProvider>
       </body>
     </html>

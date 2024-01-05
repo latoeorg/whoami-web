@@ -19,7 +19,7 @@ const SiteHeader = () => {
         <div className="flex items-center justify-between space-x-2 md:justify-end">
           <nav className="flex items-center">
             <Link
-              href={siteConfig.links.github}
+              href={siteConfig.links.source_code}
               target="_blank"
               rel="noreferrer"
             >
