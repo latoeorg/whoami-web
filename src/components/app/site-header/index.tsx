@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { siteConfig } from "@/constant";
 import { SiteHeaderModeToggle } from "./mode-toggle";
 import { Icons } from "@/components/atoms/icons";
+import { SiteHeaderUserNav } from "./user-nav";
 
 const SiteHeader = () => {
   return (
@@ -36,6 +37,7 @@ const SiteHeader = () => {
               </div>
             </Link>
             <SiteHeaderModeToggle />
+            <SiteHeaderUserNav />
           </nav>
         </div>
       </div>
